@@ -2,9 +2,9 @@
 # 1) arp request
 # 2) broadcast
 # 3) arp response
-"""
-"""
+
 scapy.ls(scapy.[Method]()) komutuyla paketin icerisindeki methodlari gorebiliriz.
+
 1-) scapy.ARP ile "pdst" komutunu kullanarak ip bloguna ARP istegi gonderdik. Ve bunu bir degiskene atadik.
 2-) scapy.Ether ile "dst" komutunu kullanarak Modeme broadcast istegi gonderdik. Ve bunu bir degiskene atadik.
 3-) Broadcast paketiyle arp request paketini birlestiriyoruz. Ve bunu bir degiskene atiyoruz. broadcast ile arp in birlestirilmesinin sebebi ise tek bir pakette toplayarak ikisinin ayni anda mac adresine iletilmesi.
