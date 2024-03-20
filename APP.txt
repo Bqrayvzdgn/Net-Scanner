@@ -1,4 +1,4 @@
-"""
+
 # 1) arp request
 # 2) broadcast
 # 3) arp response
@@ -11,7 +11,7 @@ scapy.ls(scapy.[Method]()) komutuyla paketin icerisindeki methodlari gorebiliriz
 4-) scapysrp({gonderilmek istenen packet}, {timeout=0}) "timeout=1" cevap alinmadiysa yani response gelmediyse "timeout=1" deger kadar bekler.
 5-) tuple yardimiyla hem cevap gelenlerin listesini hemde cevap gelmeyenleri ayni tuple icerisindde degisken yaptik.
 6-) "answer_list" cevap verenlerin listesini "answer_list.summary()" ile scapynin kendi icerisinde olan ozellik ile kisa bir liste yaptik. yani summary() bize basit bir sekilde answer listesini duzenledi.
-"""
+
 import scapy.all as scapy
 arp_request_packet = scapy.ARP(pdst="192.168.80.0/24")
 broadcast_packet = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
