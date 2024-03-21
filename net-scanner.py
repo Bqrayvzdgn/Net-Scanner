@@ -31,8 +31,7 @@ if __name__ == "__main__":
     print("This application was developed by bqrdev.\n")
     targetIP = input(str("Enter target IP: "))
     try:
-        while True:
-            scan_my_network(targetIP)
+        scan_my_network(targetIP)
     except KeyboardInterrupt:
         print("Exiting.")
     finally:
