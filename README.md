@@ -1,11 +1,11 @@
-# Net-Scanner
+# Network-Scanner
 <p>A python script that allows you to perform a network scan on Linux computers.</p>
 
 ### Download :
 ```shell
 sudo su
-git clone https://github.com/Bqrayvzdgn/Net-scanner
-cd ./Net-scanner
+git clone https://github.com/Bqrayvzdgn/Network-Scanner
+cd ./Network-Scanner
 python net-scanner.py -h
 ```
 
