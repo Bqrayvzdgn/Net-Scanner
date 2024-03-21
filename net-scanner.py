@@ -30,11 +30,8 @@ if __name__ == "__main__":
     print(Banners.LOGO)
     print("This application was developed by bqrdev.\n")
     targetIP = input(str("Enter target IP: "))
-    try:
-        scan_my_network(targetIP)
-    except KeyboardInterrupt:
-        print("Exiting.")
-    finally:
-        print(Banners.QUIT)
+    scan_my_network(targetIP)
+    print("\nExiting.")
+    print(Banners.QUIT)
 else:
     print(Banners.ERROR)
