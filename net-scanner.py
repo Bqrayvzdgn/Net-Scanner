@@ -19,6 +19,9 @@ class Banners:
     ██████╦╝░╚═██╔═╝░██║░░██║██████╔╝███████╗░░╚██╔╝░░
     ╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░╚══════╝░░░╚═╝░░░
     """
+    
+    SEPARATOR = "==================================================="
+
 
 def get_user_input():
     print(Banners.LOGO)
@@ -40,6 +43,9 @@ def scan_my_network(ip):
     combined_packet = broadcast_packet/arp_request_packet
     (answered_list,unanswered_list) = scapy.srp(combined_packet,timeout=1)
     answered_list.summary()
+    print(Banners.SEPARATOR)
+    unanswered_list.summary()
+    
 
 user_ip_address = get_user_input()
 scan_my_network(user_ip_address.ip_address)
