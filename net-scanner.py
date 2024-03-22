@@ -15,7 +15,10 @@ class Banners:
     """
 
 def get_user_input():
-    parse_object = optparse.OptionParser(description="This application was developed by bqrdev.", usage="python net-scanner",)
+    parse_object = optparse.OptionParser(
+        description="This application was developed by bqrdev.", 
+        usage="python net-scanner.py -ipaddress [Target IP Field]",
+    )
     parse_object.add_option("-i","--ipaddress", dest="ip_address",help="Enter IP Address")
     (user_input,arguments) = parse_object.parse_args()
     if not user_input.ip_address:
